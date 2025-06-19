@@ -1,0 +1,104 @@
+para cambiar y crear un base de "Use [nombre de la base ]"
+show bds -> muestra las bases de datos 
+show collections ->muestra las colecciones 
+db."coleccion".find() -> muestra las los 
+db -> muestra la base que se esta usando 
+ 
+-- para crear una coleccion con documentos
+use nombre_de_la_base_de_datos
+db.createCollection("nombre_de_la_coleccion")
+
+***
+db.usuarios.insertMany([{nombre:'Jose',clave:123},{nombre:'denil',edad:19}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('670d899d390617d934c73bf8'),
+    '1': ObjectId('670d899d390617d934c73bf9')
+  }
+}
+
+-- boorar bases de datos 
+db.usuarios.deleteMany({}) // elimina todos los documentos 
+**
+db.usuarios.drop() // elimina la coleccion y  los documentos 
+**
+use base1
+db.dropDatabase() // elimina la base de datos
+--
+** busqueda de elementos 
+
+$eq -> que sea igual 
+db.libros.find({precio:{$eq:50}})
+[
+  {
+    _id: 4,
+    titulo: 'Aprende PHP',
+    autor: 'MArio Molina',
+    editorial: [ 'siglo XXI', 'Planeta' ],
+    precio: 50,
+    cantidad: 20
+  }
+]
+db["libros"].find({precio:50})
+[
+  {
+    _id: 4,
+    titulo: 'Aprende PHP',
+    autor: 'MArio Molina',
+    editorial: [ 'siglo XXI', 'Planeta' ],
+    precio: 50,
+    cantidad: 20
+  }
+]
+
+$gt
+$gte
+
+$lt -> menores
+base1> db.libros.find({precio:{$lt:50}})
+[
+  {
+    _id: 1,
+    titulo: 'El Aleph',
+    autor: 'Borges',
+    editorial: [ 'siglo XXI', 'Planeta' ],
+    precio: 20,
+    cantidad: 50
+  },
+  {
+    _id: 2,
+    titulo: 'Martin Fierro',
+    autor: 'Jose Hernandez',
+    editorial: [ 'siglo XXI' ],
+    precio: 20,
+    cantidad: 50
+  },
+  {
+    _id: 3,
+    titulo: 'Java en 10 Min',
+    editorial: [ 'siglo XXI' ],
+    precio: 45,
+    cantidad: 1
+  }
+]
+
+db.articulos.insertMany([
+  {_id:2,
+nombre:'Multifuncion Epson XP241',
+rubro:'impresora',
+precio:3700,
+stock:20},
+{_id:3,
+nombre:'Led 19 Philips',
+rubro:'monitor',
+precio:4500,stock:2},
+{_id:4,
+nombre:'Led 22 Philips',
+rubro:'monitor',
+precio:5700,stock:4},
+{_id:5,
+nombre:'Led 27 Philips',
+rubro:'monitor',
+precio:1200,stock:1}
+])
