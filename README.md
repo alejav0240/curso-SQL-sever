@@ -35,10 +35,9 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno:
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone https://github.com/tu_usuario/ciencia-de-sql.git # Reemplaza con la URL real de tu repositorio
-    cd ciencia-de-sql
+    git clone https://github.com/alejav0240/curso-SQL-sever.git # Reemplaza con la URL real de tu repositorio
+    cd curso-SQL-sever
     ```
-    (Si no es un repositorio Git, simplemente descarga los archivos directamente).
 
 2.  **Configurar SQL Server:**
     *   Asegúrate de que tu instancia de SQL Server esté en ejecución.
