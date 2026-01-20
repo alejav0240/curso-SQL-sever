@@ -1,8 +1,10 @@
 # Ciencia de SQL
 
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) !
 
 Este proyecto es un repositorio exhaustivo dedicado a la exploración y el dominio de SQL Server. 🚀 Desde las consultas `SELECT` más fundamentales hasta funcionalidades avanzadas como funciones, procedimientos almacenados, triggers, cursores y subconsultas, este recurso está diseñado para guiar a usuarios y desarrolladores a través de las complejidades de SQL Server. Con un enfoque práctico, ofrece ejemplos claros y ejercicios para solidificar el aprendizaje y la comprensión de las capacidades de SQL. Es ideal para quienes buscan entender la estructura y el comportamiento de SQL Server en profundidad.
+
+![Home Preview](./images/home.png)
 
 ## 🌟 Características Principales
 
@@ -25,9 +27,6 @@ Para sacar el máximo provecho de este proyecto, necesitarás:
 *   **Cliente SQL:** Una herramienta de gestión de bases de datos para ejecutar y administrar los scripts, como:
     *   [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms)
     *   [Azure Data Studio](https://docs.microsoft.com/es-es/sql/azure-data-studio/download-azure-data-studio)
-*   **Python (Opcional):** Si planeas interactuar con SQL Server mediante Python para automatización o generación de informes, necesitarás:
-    *   Python 3.x instalado.
-    *   Librerías como `pyodbc`, `pymssql` o `SQLAlchemy` (instala con `pip install <nombre_de_libreria>`) junto con los controladores ODBC/DBAPI apropiados para SQL Server.
 
 ## 🚀 Instrucciones de Instalación
 
@@ -35,7 +34,7 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno:
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone https://github.com/alejav0240/curso-SQL-sever.git # Reemplaza con la URL real de tu repositorio
+    git clone https://github.com/alejav0240/curso-SQL-sever.git 
     cd curso-SQL-sever
     ```
 
@@ -95,4 +94,3 @@ curso-SQL-sever/
 
 *   **SQL Server:** El sistema de gestión de bases de datos relacionales principal del proyecto.
 *   **SQL (Structured Query Language):** El lenguaje de consulta universal utilizado en todos los scripts para interactuar con la base de datos.
-*   **Python:** Mencionada como el lenguaje principal para posibles interacciones programáticas con la base de datos, automatizaciones o generación de informes.
